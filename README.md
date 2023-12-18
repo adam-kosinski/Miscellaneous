@@ -1,0 +1,1 @@
+This is a collection of oddball programs / scripts / miscellaneous things. These often don't have a user interface associated, as were intended for my use.
