@@ -38,4 +38,4 @@ if __name__ == "__main__":
 		row = generate_glowworm_row(True)
 		print(row)
 		copy_to_clipboard(row)
-		# sleep(0.2)
+		sleep(0.1)
