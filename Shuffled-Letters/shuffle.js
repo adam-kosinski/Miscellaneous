@@ -2,11 +2,13 @@ const textarea = document.getElementById("input");
 const output = document.getElementById("output");
 
 textarea.addEventListener("input", () => {
-  output.textContent = processText(textarea.value);
+  output.innerHTML = processText(textarea.value);
 });
 
 function processText(text) {
-  return text.replaceAll(/\w+/g, (s) => shuffleInnerLetters(s));
+  return text
+    .replaceAll(/\w+/g, (s) => shuffleInnerLetters(s))
+    .replaceAll(/\n/g, "<br>");
 }
 
 function shuffleInnerLetters(word) {
